@@ -1,0 +1,6 @@
+/Users/aniekan/Projects/c programs/C#/palindrome/palindrome/bin/Debug/palindrome.exe
+/Users/aniekan/Projects/c programs/C#/palindrome/palindrome/bin/Debug/palindrome.pdb
+/Users/aniekan/Projects/c programs/C#/palindrome/palindrome/obj/Debug/palindrome.csproj.AssemblyReference.cache
+/Users/aniekan/Projects/c programs/C#/palindrome/palindrome/obj/Debug/palindrome.csproj.CoreCompileInputs.cache
+/Users/aniekan/Projects/c programs/C#/palindrome/palindrome/obj/Debug/palindrome.exe
+/Users/aniekan/Projects/c programs/C#/palindrome/palindrome/obj/Debug/palindrome.pdb
