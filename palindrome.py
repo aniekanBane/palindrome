@@ -9,11 +9,10 @@ def palindrome(string:str):
 
 if __name__ == '__main__':
   print("Is it a palindrome ?")
-  kg = True
-  while(kg):
-    entry = input("Your word/phrase > "))
-    if entry == 'stop': kg = False
+
+  while(True):
+    entry = input("Your word/phrase > ")
+    if entry == 'stop': break
     
     pal, num = palindrome(entry)
-    print("Palindrome: {}, Length: {}", pal, num)
-    
+    print("Palindrome: {}, Length: {}".format(pal, num))
