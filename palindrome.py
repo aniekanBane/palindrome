@@ -11,6 +11,9 @@ if __name__ == '__main__':
   print("Is it a palindrome ?")
   kg = True
   while(kg):
-    pal, num = palindrome(input("Your word/phrase > "))
+    entry = input("Your word/phrase > "))
+    if entry == 'stop': kg = False
+    
+    pal, num = palindrome(entry)
     print("Palindrome: {}, Length: {}", pal, num)
     
