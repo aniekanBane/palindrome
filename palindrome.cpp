@@ -25,9 +25,10 @@ pair<string, int> isPalindrome(string s){
 int main() {
   string str;
   cout << "Type your sentence or word" << endl;
-  do{
+  while (1){
     cin >> str;
+    if (str == "stop") break;
     pair<string, int> pal = isPalindrome(str);
     cout << "Palindrome : " << pal.first <<", Lenght : " << pal.second;
-  } while (str != "exit");
+  }
 }
