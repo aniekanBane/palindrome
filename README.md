@@ -7,3 +7,4 @@ Couple of examples to try:
 - racecar
 - No X in nixon
 - Radar
+- Do geese see God?
