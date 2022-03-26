@@ -1,34 +1,30 @@
 #include <iostream>
 #include <string>
-#include <fstream>
-
 
 using namespace std;
 
-pair<string, int> isPalindrome(string s){
-
-  int len = s.length();
+pair<bool, int> isPalindrome(string s)
+{
   string proc;
-  for (char c : s){
+  for (char c : s)
     if (!isspace(c) && !ispunct(c))
        proc +=  tolower(c);
-  }
-  //cout << proc;
+
   string rev;
-  for (int n = proc.length()-1; n >=0; n--){
+  for (int n = proc.length()-1; n >=0; n--)
      rev.push_back(proc[n]);
-  }
-  if (proc == rev) return pair("True", len);
-  else return pair("False", 0);
+  
+  bool ans = proc == rev;
+  return pair(ans, ans ? s.length() : 0);
 }
 
 int main() {
   string str;
-  cout << "Type your sentence or word" << endl;
-  while (1){
+  cout << "Type your sentence or word. 'end' to quit" << endl;
+  while (true){
     cin >> str;
-    if (str == "stop") break;
-    pair<string, int> pal = isPalindrome(str);
+    if (str == "end") break;
+    auto pal = isPalindrome(str);
     cout << "Palindrome : " << pal.first <<", Lenght : " << pal.second;
   }
 }
